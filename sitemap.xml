@@ -1,9 +1,34 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+const fs = require('fs');
+const path = require('path');
+
+const baseUrl = 'https://allplayhub.netlify.app';
+
+const pages = [
+  '', // Home
+  'admin.html',
+  'tools/tool1.html',
+  'games/game1.html',
+  'games/game2.html',
+  // Yaha dynamically user content ke paths add karo
+];
+
+const today = new Date().toISOString().split('T')[0];
+
+const urls = pages.map(page => {
+  return `
   <url>
-    <loc>https://allplayhub.netlify.app/</loc>
-    <lastmod>2025-07-17</lastmod>
+    <loc>${baseUrl}/${page}</loc>
+    <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  </urlset>
+    <priority>0.8</priority>
+  </url>`;
+}).join('\n');
+
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls}
+</urlset>`;
+
+fs.writeFileSync(path.join(__dirname, 'public', 'sitemap.xml'), sitemap);
+
+console.log('✅ Sitemap generated!');
