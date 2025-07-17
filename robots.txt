@@ -1,19 +1,44 @@
 User-agent: *
 Allow: /
 
-Allow: /*.html$
-Allow: /*.css$
-Allow: /*.js$
+User-agent: Googlebot
+Allow: /
 Allow: /*.jpg$
 Allow: /*.png$
 Allow: /*.gif$
+Allow: /*.webp$
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
 
 Disallow: /admin/
 Disallow: /api/
-Disallow: /*?*
+Disallow: /user/private/
+Disallow: /temp/
 
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 1
+Allow: /games
+Allow: /apps
+Allow: /tools
+Allow: /game/*
+Allow: /app/*
+Allow: /tool/*
+Allow: /play/*
+Allow: /developer
+Allow: /upload
+Allow: /privacy-policy
 
 Sitemap: https://allplayhub.netlify.app/sitemap.xml
+
+Crawl-delay: 1
