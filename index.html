@@ -3,31 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>AllPlayHub-Ultimate Games & Apps Platform | Play & Upload HTML5 Games</title>
-    <meta name="description" content="AllPlayHub - The ultimate destination for HTML5 games, web apps & developer tools. Play thousands of games instantly or upload your own creations. No downloads required!">
-    <meta name="keywords" content="AllPlayHub, HTML5 games, browser games, web apps, online games, indie games, game platform, upload games, developer tools, free games, instant play">
+    
+    <title>AllPlayHub: HTML5 Games & Web Apps | Create, Play & Publish | Free Online Gaming Platform</title>
+    
+    <meta name="description" content="AllPlayHub - The ultimate hub for HTML5 games, web apps, and developer tools. Play thousands of free games instantly, upload your own creations, and access powerful tools. Mobile-friendly, no downloads required!">
+    
     <meta name="author" content="AllPlayHub Team">
     <meta name="language" content="English">
     <meta name="revisit-after" content="7 days">
     <meta name="distribution" content="global">
     <meta name="rating" content="general">
     
-    <!-- Enhanced SEO Meta Tags for Better Google Indexing -->
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <link rel="canonical" href="https://playvault.app">
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="slurp" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://allplayhub.netlify.app"> <link rel="sitemap" type="application/xml" href="/sitemap.xml">
     
-    <!-- JSON-LD Structured Data for Rich Snippets -->
-    <script type="application/ld+json">
+    <meta name="google-site-verification" content="your-verification-code" id="google-verification-meta">
+    <meta name="msvalidate.01" content="your-bing-verification-code" id="bing-verification-meta">
+    <meta name="yandex-verification" content="your-yandex-verification-code" id="yandex-verification-meta">
+    <meta name="p:domain_verify" content="your-pinterest-verification-code" id="pinterest-verification-meta">
+    
+    <meta name="page-type" content="homepage" id="page-type-meta">
+    <meta name="content-category" content="gaming-platform" id="content-category-meta">
+    
+    <script type="application/ld+json" id="main-structured-data">
     {
         "@context": "https://schema.org",
         "@type": "WebApplication",
         "name": "AllPlayHub",
-        "description": "Ultimate HTML5 games and apps platform for instant play and easy upload",
-        "url": "https://playvault.app",
+        "description": "The ultimate hub for HTML5 games & web apps. Play thousands of free games instantly, upload your own creations, and access powerful developer tools for online game development. Mobile-friendly, no downloads required!",
+        "url": "https://allplayhub.netlify.app", "image": "https://allplayhub.netlify.app/images/allplayhub-logo.png", // IMPORTANT: Replace with the actual URL of your app's main logo or representative image
         "applicationCategory": "GameApplication",
         "operatingSystem": "Web Browser",
+        "keywords": ["HTML5 games", "web apps", "online games", "free games", "upload games", "developer tools", "game platform", "indie games", "browser games", "play instantly", "game creation", "user content"], // Keywords directly in JSON-LD for descriptive clarity
         "offers": {
             "@type": "Offer",
             "price": "0",
@@ -37,14 +47,36 @@
             "@type": "Organization",
             "name": "AllPlayHub Team"
         },
+        "publisher": { // Added publisher property for more complete schema
+            "@type": "Organization",
+            "name": "AllPlayHub Team",
+            "url": "https://allplayhub.netlify.app",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://allplayhub.netlify.app/images/allplayhub-publisher-logo.png" // Optional: Replace with your publisher's logo URL
+            }
+        },
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.8",
             "ratingCount": "1250"
-        }
+        },
+        "isPartOf": { // Useful if your app is part of a larger portal/website
+            "@type": "WebSite",
+            "name": "AllPlayHub Official Site",
+            "url": "https://allplayhub.netlify.app"
+        },
+        "featureList": [ // List some key features of your app
+            "Play thousands of HTML5 games online",
+            "Upload and publish your own web games",
+            "Access developer tools for game creation",
+            "No download required, instant play",
+            "Cross-platform compatibility (web browser)",
+            "Community for indie game developers and players"
+        ]
     }
     </script>
-    
+  
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="AllPlayHub - Ultimate Games & Apps Platform">
@@ -1071,6 +1103,9 @@
         <div id="side-menu-overlay" class="side-menu-overlay">
             <div id="side-menu" class="side-menu">
                 <div class="side-menu-header">AllPlayHub Menu</div>
+                <a class="side-menu-item">
+                    <span></span> 
+                </a>
                 <a class="side-menu-item" onclick="showTab('policy-tab'); closeSideMenu();">
                     <i class="fas fa-shield-alt"></i>
                     <span>Privacy Policy</span>
@@ -1121,6 +1156,142 @@
                     <!-- Container for Horizontally Scrolling Categories -->
                     <div id="categories-container">
                         <!-- Items will be dynamically loaded here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEO & Search Console Settings Tab -->
+            <div id="seo-tab" class="tab-content screen">
+                <div class="screen-content">
+                    <!-- SEO Header -->
+                    <div class="bg-primary rounded-3xl p-4 mb-4 text-white">
+                        <h1 class="text-xl font-bold mb-2">
+                            <i class="fas fa-search mr-2"></i>SEO & Search Console
+                        </h1>
+                        <p class="text-sm opacity-90">Optimize your app for search engines</p>
+                    </div>
+
+                    <!-- Google Search Console Integration -->
+                    <div class="bg-white rounded-2xl p-4 shadow-lg border border-borderColor mb-4">
+                        <h3 class="font-semibold text-textDark mb-3 text-sm">
+                            <i class="fas fa-google mr-2"></i>Google Search Console
+                        </h3>
+                        <div class="space-y-3">
+                            <div class="rich-input">
+                                <i class="fas fa-key"></i>
+                                <input type="text" id="google-verification" placeholder="Google Search Console Verification Code" class="text-base">
+                            </div>
+                            <div class="rich-input">
+                                <i class="fab fa-microsoft"></i>
+                                <input type="text" id="bing-verification" placeholder="Bing Webmaster Verification Code" class="text-base">
+                            </div>
+                            <div class="rich-input">
+                                <i class="fas fa-search"></i>
+                                <input type="text" id="yandex-verification" placeholder="Yandex Verification Code" class="text-base">
+                            </div>
+                            <button onclick="updateVerificationCodes()" class="w-full py-2 bg-primary text-white rounded-xl font-medium">
+                                Update Verification Codes
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Robots.txt Generator -->
+                    <div class="bg-white rounded-2xl p-4 shadow-lg border border-borderColor mb-4">
+                        <h3 class="font-semibold text-textDark mb-3 text-sm">
+                            <i class="fas fa-robot mr-2"></i>Robots.txt Generator
+                        </h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-textDark">Allow Search Engine Crawling</span>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" id="allow-crawling" class="sr-only peer" checked>
+                                    <div class="w-9 h-5 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+                                </label>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-textDark">Allow Images Indexing</span>
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" id="allow-images" class="sr-only peer" checked>
+                                    <div class="w-9 h-5 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+                                </label>
+                            </div>
+                            <textarea id="robots-preview" class="w-full p-3 border border-borderColor rounded-xl bg-gray-50 text-textDark text-xs resize-none" rows="8" readonly></textarea>
+                            <div class="flex gap-2">
+                                <button onclick="generateRobotsTxt()" class="flex-1 py-2 bg-primary text-white rounded-xl font-medium">
+                                    Generate Robots.txt
+                                </button>
+                                <button onclick="downloadRobotsTxt()" class="flex-1 py-2 bg-green-500 text-white rounded-xl font-medium">
+                                    Download
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sitemap Generator -->
+                    <div class="bg-white rounded-2xl p-4 shadow-lg border border-borderColor mb-4">
+                        <h3 class="font-semibold text-textDark mb-3 text-sm">
+                            <i class="fas fa-sitemap mr-2"></i>Sitemap Generator
+                        </h3>
+                        <div class="space-y-3">
+                            <div class="text-xs text-textMuted mb-2">Auto-generated sitemap for all published games and apps</div>
+                            <textarea id="sitemap-preview" class="w-full p-3 border border-borderColor rounded-xl bg-gray-50 text-textDark text-xs resize-none" rows="6" readonly></textarea>
+                            <div class="flex gap-2">
+                                <button onclick="generateSitemap()" class="flex-1 py-2 bg-primary text-white rounded-xl font-medium">
+                                    Generate Sitemap
+                                </button>
+                                <button onclick="downloadSitemap()" class="flex-1 py-2 bg-green-500 text-white rounded-xl font-medium">
+                                    Download XML
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SEO Meta Tags Management -->
+                    <div class="bg-white rounded-2xl p-4 shadow-lg border border-borderColor mb-4">
+                        <h3 class="font-semibold text-textDark mb-3 text-sm">
+                            <i class="fas fa-tags mr-2"></i>Dynamic Meta Tags
+                        </h3>
+                        <div class="space-y-3">
+                            <div class="grid grid-cols-2 gap-2 text-xs">
+                                <div class="p-2 bg-green-50 rounded-lg">
+                                    <div class="font-medium text-green-700">Home Page</div>
+                                    <div class="text-green-600">index, follow</div>
+                                </div>
+                                <div class="p-2 bg-blue-50 rounded-lg">
+                                    <div class="font-medium text-blue-700">Game Pages</div>
+                                    <div class="text-blue-600">index, follow</div>
+                                </div>
+                                <div class="p-2 bg-purple-50 rounded-lg">
+                                    <div class="font-medium text-purple-700">Search Pages</div>
+                                    <div class="text-purple-600">noindex, follow</div>
+                                </div>
+                                <div class="p-2 bg-orange-50 rounded-lg">
+                                    <div class="font-medium text-orange-700">User Profiles</div>
+                                    <div class="text-orange-600">noindex, nofollow</div>
+                                </div>
+                            </div>
+                            <div class="text-xs text-textMuted mt-2">
+                                <i class="fas fa-info-circle mr-1"></i>
+                                Meta robots tags are dynamically applied based on page type
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SEO Analytics -->
+                    <div class="bg-white rounded-2xl p-4 shadow-lg border border-borderColor">
+                        <h3 class="font-semibold text-textDark mb-3 text-sm">
+                            <i class="fas fa-chart-line mr-2"></i>SEO Status
+                        </h3>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="text-center p-3 bg-green-50 rounded-xl">
+                                <div class="text-lg font-bold text-green-600" id="indexed-count">0</div>
+                                <div class="text-xs text-green-700">Indexed Items</div>
+                            </div>
+                            <div class="text-center p-3 bg-blue-50 rounded-xl">
+                                <div class="text-lg font-bold text-blue-600" id="seo-score">100</div>
+                                <div class="text-xs text-blue-700">SEO Score</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1600,7 +1771,7 @@
         const storage = firebase.storage();
 
         // ========================================
-        // MAIN APP IMPLEMENTATION
+        // MAIN APP IMPLEMENTATION WITH ENHANCED SEO
         // ========================================
         
         let allItems = [];
@@ -1625,6 +1796,250 @@
             'Tool': '🔧'
         };
 
+        // ========================================
+        // SEO & SEARCH CONSOLE FUNCTIONS
+        // ========================================
+
+        function updateVerificationCodes() {
+            const googleCode = document.getElementById('google-verification').value.trim();
+            const bingCode = document.getElementById('bing-verification').value.trim();
+            const yandexCode = document.getElementById('yandex-verification').value.trim();
+
+            // Update meta tags dynamically
+            if (googleCode) {
+                document.getElementById('google-verification-meta').content = googleCode;
+                localStorage.setItem('googleVerification', googleCode);
+            }
+            if (bingCode) {
+                document.getElementById('bing-verification-meta').content = bingCode;
+                localStorage.setItem('bingVerification', bingCode);
+            }
+            if (yandexCode) {
+                document.getElementById('yandex-verification-meta').content = yandexCode;
+                localStorage.setItem('yandexVerification', yandexCode);
+            }
+
+            showToast('Verification codes updated successfully! 🔍');
+        }
+
+        function generateRobotsTxt() {
+            const allowCrawling = document.getElementById('allow-crawling').checked;
+            const allowImages = document.getElementById('allow-images').checked;
+            
+            let robotsContent = '';
+            
+            if (allowCrawling) {
+                robotsContent += `User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+${allowImages ? 'Allow: /*.jpg$' : 'Disallow: /*.jpg$'}
+${allowImages ? 'Allow: /*.png$' : 'Disallow: /*.png$'}
+${allowImages ? 'Allow: /*.gif$' : 'Disallow: /*.gif$'}
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+Sitemap: https://playvault.app/sitemap.xml
+
+# Game and App specific crawling
+Allow: /game/*
+Allow: /app/*
+Allow: /tool/*
+Disallow: /admin/
+Disallow: /api/
+Disallow: /user/private/
+
+# Crawl delay
+Crawl-delay: 1`;
+            } else {
+                robotsContent = `User-agent: *
+Disallow: /
+
+Sitemap: https://playvault.app/sitemap.xml`;
+            }
+
+            document.getElementById('robots-preview').value = robotsContent;
+            localStorage.setItem('robotsContent', robotsContent);
+        }
+
+        function downloadRobotsTxt() {
+            const content = document.getElementById('robots-preview').value;
+            if (!content) {
+                showToast('Please generate robots.txt first!');
+                return;
+            }
+            
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'robots.txt';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            showToast('Robots.txt downloaded successfully! 🤖');
+        }
+
+        function generateSitemap() {
+            const baseUrl = 'https://playvault.app';
+            const currentDate = new Date().toISOString().split('T')[0];
+            
+            let sitemapContent = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>${baseUrl}</loc>
+        <lastmod>${currentDate}</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>${baseUrl}/games</loc>
+        <lastmod>${currentDate}</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>${baseUrl}/apps</loc>
+        <lastmod>${currentDate}</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>${baseUrl}/tools</loc>
+        <lastmod>${currentDate}</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>`;
+
+            // Add individual game/app/tool pages
+            allItems.forEach(item => {
+                const slug = item.slug || item.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+                const itemDate = item.submittedAt ? new Date(item.submittedAt).toISOString().split('T')[0] : currentDate;
+                
+                sitemapContent += `
+    <url>
+        <loc>${baseUrl}/${item.type.toLowerCase()}/${slug}</loc>
+        <lastmod>${itemDate}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>`;
+            });
+
+            sitemapContent += `
+</urlset>`;
+
+            document.getElementById('sitemap-preview').value = sitemapContent;
+            localStorage.setItem('sitemapContent', sitemapContent);
+            showToast('Sitemap generated with ' + allItems.length + ' items! 🗺️');
+        }
+
+        function downloadSitemap() {
+            const content = document.getElementById('sitemap-preview').value;
+            if (!content) {
+                showToast('Please generate sitemap first!');
+                return;
+            }
+            
+            const blob = new Blob([content], { type: 'application/xml' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'sitemap.xml';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            showToast('Sitemap.xml downloaded successfully! 📄');
+        }
+
+        function updateDynamicMetaTags(pageType, itemData = null) {
+            const robotsMeta = document.querySelector('meta[name="robots"]');
+            const pageTypeMeta = document.getElementById('page-type-meta');
+            const categoryMeta = document.getElementById('content-category-meta');
+            
+            // Update page type
+            if (pageTypeMeta) pageTypeMeta.content = pageType;
+            
+            // Update robots meta based on page type
+            switch(pageType) {
+                case 'homepage':
+                    robotsMeta.content = 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
+                    categoryMeta.content = 'gaming-platform';
+                    break;
+                case 'game-page':
+                    robotsMeta.content = 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
+                    categoryMeta.content = 'html5-game';
+                    if (itemData) {
+                        document.title = `${itemData.title} - Play Online on AllPlayHub`;
+                        document.querySelector('meta[name="description"]').content = 
+                            `Play ${itemData.title} online for free on AllPlayHub. ${itemData.description || 'HTML5 game with instant play, no downloads required.'}`;
+                    }
+                    break;
+                case 'app-page':
+                    robotsMeta.content = 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
+                    categoryMeta.content = 'web-application';
+                    if (itemData) {
+                        document.title = `${itemData.title} - Web App on AllPlayHub`;
+                        document.querySelector('meta[name="description"]').content = 
+                            `Use ${itemData.title} web app on AllPlayHub. ${itemData.description || 'HTML5 web application with instant access.'}`;
+                    }
+                    break;
+                case 'search-page':
+                    robotsMeta.content = 'noindex, follow';
+                    categoryMeta.content = 'search-results';
+                    break;
+                case 'user-profile':
+                    robotsMeta.content = 'noindex, nofollow';
+                    categoryMeta.content = 'user-profile';
+                    break;
+                default:
+                    robotsMeta.content = 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
+                    categoryMeta.content = 'gaming-platform';
+            }
+        }
+
+        // Load saved verification codes
+        function loadSavedVerificationCodes() {
+            const googleCode = localStorage.getItem('googleVerification');
+            const bingCode = localStorage.getItem('bingVerification');
+            const yandexCode = localStorage.getItem('yandexVerification');
+            
+            if (googleCode) {
+                document.getElementById('google-verification').value = googleCode;
+                document.getElementById('google-verification-meta').content = googleCode;
+            }
+            if (bingCode) {
+                document.getElementById('bing-verification').value = bingCode;
+                document.getElementById('bing-verification-meta').content = bingCode;
+            }
+            if (yandexCode) {
+                document.getElementById('yandex-verification').value = yandexCode;
+                document.getElementById('yandex-verification-meta').content = yandexCode;
+            }
+        }
+
+        function updateSEOStats() {
+            document.getElementById('indexed-count').textContent = allItems.length;
+            // Calculate SEO score based on various factors
+            let seoScore = 100;
+            if (allItems.length === 0) seoScore -= 30;
+            if (!localStorage.getItem('googleVerification')) seoScore -= 20;
+            if (!localStorage.getItem('robotsContent')) seoScore -= 15;
+            if (!localStorage.getItem('sitemapContent')) seoScore -= 15;
+            
+            document.getElementById('seo-score').textContent = Math.max(seoScore, 0);
+        }
+
+        // ========================================
+        // EXISTING APP FUNCTIONS (Enhanced with SEO)
+        // ========================================
+
         function setupSearch() {
             const searchInput = document.querySelector('.search-input');
             let searchTimeout;
@@ -1632,6 +2047,9 @@
             searchInput.addEventListener('input', (e) => {
                 clearTimeout(searchTimeout);
                 const query = e.target.value.toLowerCase().trim();
+                
+                // Update meta tags for search
+                updateDynamicMetaTags(query ? 'search-page' : 'homepage');
                 
                 searchTimeout = setTimeout(() => {
                     renderItems(allItems, query);
@@ -1677,6 +2095,10 @@
             setupThemeChanger();
             loadCurrentTheme();
             generateSEOStructuredData();
+            loadSavedVerificationCodes();
+            // Auto-generate robots.txt and sitemap on load
+            generateRobotsTxt();
+            setTimeout(() => generateSitemap(), 1000); // Wait for items to load
         });
 
         // Enhanced SEO Functions for Better Google Indexing
@@ -1685,6 +2107,7 @@
             if (allItems.length > 0) {
                 updateSEOMetaTags();
                 generateBreadcrumbStructuredData();
+                updateSEOStats();
             }
         }
 
@@ -1812,6 +2235,7 @@
 
         function initializeApp() {
             showTab('home-tab');
+            updateDynamicMetaTags('homepage');
             if (!localStorage.getItem('userName')) {
                 localStorage.setItem('userName', 'AllPlayHub User');
                 localStorage.setItem('userEmail', 'user@playvault.app');
@@ -1858,6 +2282,19 @@
             
             const newHeader = document.querySelector('.new-header');
             newHeader.style.display = (tabId === 'home-tab') ? 'flex' : 'none';
+            
+            // Update meta tags based on current tab
+            switch(tabId) {
+                case 'home-tab':
+                    updateDynamicMetaTags('homepage');
+                    break;
+                case 'profile-tab':
+                    updateDynamicMetaTags('user-profile');
+                    break;
+                case 'seo-tab':
+                    updateSEOStats();
+                    break;
+            }
             
             if (tabId.includes('-tab')) {
                 const targetScreen = document.querySelector(`#${tabId}`);
@@ -2142,6 +2579,7 @@
                 }
                 renderItems(allItems);
                 generateSEOStructuredData(); // Update overall SEO
+                updateSEOStats();
                 isLoading = false;
             }, (error) => {
                 console.error("Firebase Read Failed: " + error.code);
@@ -2249,8 +2687,8 @@
         }
 
         function playItem(item) {
-            // Update page title for SEO
-            document.title = `Playing ${item.title} - AllPlayHub`;
+            // Update page title and meta tags for SEO
+            updateDynamicMetaTags(item.type.toLowerCase() + '-page', item);
             
             // Track play count for popular items (could be used for SEO ranking)
             if (item.key) {
@@ -2279,6 +2717,7 @@
             document.getElementById('play-modal').style.display = 'none';
             document.getElementById('play-iframe').srcdoc = '';
             document.title = 'AllPlayHub - Ultimate Games & Apps Platform'; // Reset title
+            updateDynamicMetaTags('homepage'); // Reset meta tags
             document.body.style.overflow = 'auto';
         });
         
@@ -2326,6 +2765,7 @@
                         // Remove SEO structured data
                         const script = document.getElementById(`item-data-${key}`);
                         if (script) script.remove();
+                        updateSEOStats();
                     })
                     .catch(err => showModal('Error deleting item: ' + err.message, 'Error'));
                 closeModal('custom-modal');
