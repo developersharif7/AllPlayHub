@@ -1,0 +1,4 @@
+# robots.txt for AllPlayHub
+User-agent: *
+Allow: /
+Sitemap: https://allplayhub.netlify.app/sitemap.xml
