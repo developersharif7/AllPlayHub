@@ -1,109 +1,19 @@
-# AllPlayHub - Optimized Robots.txt for Gaming Platform
-# https://allplayhub.netlify.app/robots.txt
-
-# Allow all search engines to crawl the main content
 User-agent: *
 Allow: /
 
-# Allow specific crawling for main sections
-Allow: /games/
-Allow: /apps/
-Allow: /tools/
 Allow: /*.html$
 Allow: /*.css$
 Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.png$
+Allow: /*.gif$
 
-# Block admin and private areas
 Disallow: /admin/
-Disallow: /admin.html
 Disallow: /api/
-Disallow: /user/private/
-Disallow: /temp/
-Disallow: /cache/
 Disallow: /*?*
 
-# Allow images and media for better indexing
-Allow: /*.jpg$
-Allow: /*.jpeg$
-Allow: /*.png$
-Allow: /*.gif$
-Allow: /*.svg$
-Allow: /*.webp$
-Allow: /*.mp4$
-Allow: /*.webm$
-
-# Google Bot specific rules
 User-agent: Googlebot
 Allow: /
-Allow: /*.jpg$
-Allow: /*.png$
-Allow: /*.gif$
-Allow: /*.css$
-Allow: /*.js$
-Disallow: /admin/
-Disallow: /admin.html
 Crawl-delay: 1
 
-# Google Image Bot
-User-agent: Googlebot-Image
-Allow: /
-Allow: /*.jpg$
-Allow: /*.png$
-Allow: /*.gif$
-Allow: /*.svg$
-Allow: /*.webp$
-
-# Bing Bot
-User-agent: Bingbot
-Allow: /
-Disallow: /admin/
-Disallow: /admin.html
-Crawl-delay: 1
-
-# Yahoo Slurp
-User-agent: Slurp
-Allow: /
-Disallow: /admin/
-Disallow: /admin.html
-Crawl-delay: 2
-
-# Facebook Bot (for social sharing)
-User-agent: facebookexternalhit
-Allow: /
-Allow: /*.jpg$
-Allow: /*.png$
-Allow: /*.gif$
-
-# Twitter Bot (for social sharing)
-User-agent: Twitterbot
-Allow: /
-Allow: /*.jpg$
-Allow: /*.png$
-Allow: /*.gif$
-
-# Block bad bots and scrapers
-User-agent: AhrefsBot
-Disallow: /
-
-User-agent: MJ12bot
-Disallow: /
-
-User-agent: DotBot
-Disallow: /
-
-User-agent: SemrushBot
-Disallow: /
-
-User-agent: BLEXBot
-Disallow: /
-
-# General crawl delay for other bots
-User-agent: *
-Crawl-delay: 1
-
-# Sitemap location
 Sitemap: https://allplayhub.netlify.app/sitemap.xml
-
-# Additional sitemaps (if you create category-specific ones later)
-# Sitemap: https://allplayhub.netlify.app/games-sitemap.xml
-# Sitemap: https://allplayhub.netlify.app/apps-sitemap.xml
